@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(250, 250, 250);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container-principal {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.container-celular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.container-celular img {
+    height: 40rem;
+}
+
+.container-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 35rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group span {
+    margin-left: 3px;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.intagram-logo {
+    height: 5rem;
+}
+
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto-perfil img {
+   height: 7rem; 
+}
+
+.instagram-login {
+    background-color: #0095E6;
+    color: #ffff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.instagram-logout {
+    columns: #0094e6;
+    margin-top: 1rem;
+
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0094e6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.download img {
+    display: flex;
+    width: 140px;
+    align-items: center;
+    margin: 3px;
+}
+
+/*media queries*/
+
+@media (max-width: 1024px) {
+    .container-principal {
+        width: 90%;
+    }
+}
+
+@media (max-width: 875px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .container-principal {
+        width: 90%;
+    }
+
+    .container-celular {
+        display: none;
+    }
+
+    .container-login {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .group{
+        border: 1px solid transparent;
+    }
+}
